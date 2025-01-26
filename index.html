@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome Page</title>
+        <style>
+            /* General Reset */
+            body, html {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: url('2.jpg') no-repeat center center/cover; /* Replace with your image */
+                background-size: cover; /* Ensures full coverage */
+                background-position: center; /* Centers the image */
+                color: #fff;
+                text-align: center;
+            }
+
+            /* Welcome Container */
+            .welcome-container {
+                background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+                padding: 20px;
+                border-radius: 12px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+                max-width: 90%; /* Responsive width for mobile */
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 2rem; /* Default font size */
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 1rem; /* Default paragraph size */
+                margin-bottom: 20px;
+            }
+
+            /* Button Styles */
+            .start-button {
+                padding: 10px 20px;
+                font-size: 1rem;
+                color: white;
+                background-color: #4caf50;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                text-decoration: none; /* Remove underline for link */
+                display: inline-block;
+            }
+
+            .start-button:hover {
+                background-color: #45a049;
+            }
+
+            /* Media Query for smaller screens */
+            @media (max-width: 768px) {
+                body, html {
+                    background-size: cover; /* Ensures better coverage on small screens */
+                }
+
+                h1 {
+                    font-size: 1.5rem; /* Smaller font size for mobile */
+                }
+
+                p {
+                    font-size: 0.9rem; /* Smaller paragraph size for mobile */
+                }
+
+                .start-button {
+                    font-size: 0.9rem;
+                    padding: 8px 16px;
+                }
+                /* Adjusting container padding for smaller screens */
+                .welcome-container {
+                    padding: 15px;
+                }
+            }
+
+            /* Further adjustments for very small screens */
+            @media (max-width: 480px) {
+                h1 {
+                    font-size: 1.2rem; /* Even smaller font for very small screens */
+                }
+
+                p {
+                    font-size: 0.8rem; /* Even smaller paragraph for very small screens */
+                }
+
+                .start-button {
+                    font-size: 0.8rem;
+                    padding: 6px 12px;
+                }
+
+                .welcome-container {
+                    padding: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="welcome-container">
+            <h1>FLAPPY BIRD</h1>
+            <p>PLAY NOW</p>
+            <a href="22.html" class="start-button">Get Started</a>
+        </div>
+    </body>
+</html>
